@@ -1,0 +1,10 @@
+food_item,category,times_sold,total_quantity_sold,total_revenue,avg_price_per_order
+pizza,Main,68,200,3200.0,47.06
+brownie,Dessert,63,192,1920.0,30.48
+fries,Starter,60,179,1432.0,23.87
+burger,Main,51,169,2873.0,56.33
+cake,Dessert,53,164,1968.0,37.13
+salad,Starter,55,159,1908.0,34.69
+pasta,Main,48,154,3234.0,67.38
+soup,Starter,50,150,1500.0,30.0
+ice cream,Dessert,52,148,1184.0,22.77
