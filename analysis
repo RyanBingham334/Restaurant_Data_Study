@@ -8,7 +8,7 @@ Question: From the given data, make predictions on why this restaurant is losing
     a. The total cost to make the recipe
     b. The gross profit of the menu item
     c. The profit margin for each dish (based on ingredients excluding labor)
-This will be the query I use: [`01_profit_margin_analysis.sql`](sql/01_profit_margin_analysis.sql) 
+This will be the query I use: [`01_profit_margin_analysis.sql`](../sql/01_profit_margin_analysis.sql)  
 I can see that the Salad and pizza menu items are outliers, losing more money than other menu items. Though it isn't necessarily bad, as long as those items sell a lot. Lets check
 I’ll use this query to check total amounts of each item sold (I also included the average price per order but later saw the information was of no value):
 I can see once again Salad is an outlier. It is one of the lowest selling items on the menu. I can also see Pizza is the best seller, meaning this is not the root cause for the loss of money.
