@@ -132,9 +132,8 @@ I'll write one final querey to calculate a few tasks:
 **Query:** [`06_discount_options.sql`](sql/06_discount_options.sql)
 
 **Finding:** [`06_discount_options.csv`](results/06_discount_options.csv)
----
 
-## Final Recommendations
+## Final Recommendations:
 
 ### Short-Term Win
 As a short win, change the salad recipe to include less parmesan. Perhaps adding more lower cost ingredients such as tomatoes or olives as a substitute
