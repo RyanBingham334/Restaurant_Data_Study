@@ -1,27 +1,10 @@
-WITH ingredient_unit_cost AS (
-    SELECT
-        ingredient,
-        (CAST(bulk_price AS REAL) / bulk_qty) / conversion_to_oz AS cost_per_oz
-    FROM ingredient_cost
-),
-menu_item_cost AS (
-    SELECT
-        bom.menu_id,
-        SUM(bom.qty * iuc.cost_per_oz) AS cost_per_item
-    FROM bill_of_materials bom
-    JOIN ingredient_unit_cost iuc
-        ON bom.ingredient = iuc.ingredient
-    GROUP BY bom.menu_id
-)
-SELECT
-    m.name AS menu_item,
-    m.menu_price,
-    ROUND(mic.cost_per_item, 2) AS cost_per_item,
-    ROUND(m.menu_price - mic.cost_per_item, 2) AS gross_profit_per_item,
-    SUM(mi.quantity) AS total_quantity_sold,
-    ROUND((m.menu_price - mic.cost_per_item) * SUM(mi.quantity), 2) AS total_profit_contribution
-FROM menu_id m
-JOIN menu_item_cost mic ON m.menu_id = mic.menu_id
-LEFT JOIN menu_items mi ON m.name = mi.food_item
-GROUP BY m.menu_id, m.name, m.menu_price, mic.cost_per_item
-ORDER BY total_profit_contribution DESC;
+menu_item,menu_price,cost_per_item,gross_profit_per_item,total_quantity_sold,total_profit_contribution
+pasta,21,2.19,18.81,154,2896.13
+burger,17,2.68,14.32,169,2420.4
+cake,12,0.38,11.62,164,1905.03
+pizza,16,6.99,9.01,200,1801.16
+brownie,10,0.65,9.35,192,1795.85
+soup,10,0.27,9.73,150,1459.69
+salad,12,3.1,8.9,159,1414.46
+fries,8,0.25,7.75,179,1387.25
+ice cream,8,0.63,7.38,148,1091.5
