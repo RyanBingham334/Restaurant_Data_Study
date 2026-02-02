@@ -140,3 +140,7 @@ As a short win, change the salad recipe to include less parmesan. Consider addin
 
 ### Long-Term Strategy
 Long term, rework the menu to include combo bundles. These bundles should include a high sold/high profit item, with a lesser sold/less profit margin item. And placing a 20% discount on the cheaper item will lead to more item sales and higher profits overall without changing the menu or switching around any labor.
+
+## Executive Summary
+
+![Dashboard](visualizations/metrics_dashboard.png)
