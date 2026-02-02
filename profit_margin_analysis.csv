@@ -1,0 +1,10 @@
+menu_id,name,menu_price,Recipe_Cost,Gross_Profit,Profit_Margin_Percent
+#008,soup,10,0.27,9.73,97.31
+#009,fries,8,0.25,7.75,96.88
+#005,cake,12,0.38,11.62,96.8
+#004,brownie,10,0.65,9.35,93.53
+#006,ice cream,8,0.63,7.38,92.19
+#001,pasta,21,2.19,18.81,89.55
+#002,burger,17,2.68,14.32,84.25
+#007,salad,12,3.1,8.9,74.13
+#003,pizza,16,6.99,9.01,56.29
