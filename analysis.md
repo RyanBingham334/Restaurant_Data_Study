@@ -8,28 +8,32 @@ Question: From the given data, make predictions on why this restaurant is losing
     a. The total cost to make the recipe
     b. The gross profit of the menu item
     c. The profit margin for each dish (based on ingredients excluding labor)
-This will be the query I use: [`01_profit_margin_analysis.sql`](sql/01_profit_margin_analysis.sql)   
-I can see that the Salad and pizza menu items are outliers, losing more money than other menu items. Though it isn't necessarily bad, as long as those items sell a lot. Lets check
-I’ll use this query to check total amounts of each item sold (I also included the average price per order but later saw the information was of no value):
-I can see once again Salad is an outlier. It is one of the lowest selling items on the menu. I can also see Pizza is the best seller, meaning this is not the root cause for the loss of money.
-I can see salad is an outlier, but why. I will use a union query to see what ingredients cost most: 
-I can see now Parmesan is the highest cost ingredient by sixty-five cents. Due to the salad being one of the lowest ordered items, and the high cost of the parmesan i believe this menu item is the cause for the loss of money
-Recommendations: 
-Regardless, start marketing the salad. Put up larger menu displays and posters to draw attention to the low sold menu/high cost menu item
-Either, reduce amount of parmesan per salad by 1 oz, saving 62 cents per order
-Or, look into changing the vinaigrette for a new parmesan dressing. Getting rid of the need for parmesan on the salad entirely. Depending on the new cost of the new dressing, this would save around one dollar per salad. And can be labeled as a new menu item for an event.
-Doing these steps could save 100-200$ per week. This is good but perhaps theres more im missing
-I’m going to go back to my original thought, the low cost menu items should be generating plenty of profit. I will use a join query to do many things here
-List the menu item, menu cost, cost to make and gross profit
-Count total quantity sold
-Finally calculate its total profit contribution to search for discrepancies 
-Here is the query: 
-I can see from the chart theres a discrepancy from the low profit items. The low profit items are generating low total profit. 
-The mains are selling extremely well, the sides and desserts are shaky
-Ice cream, fries and salad are losing the most
-Ice cream has a high cost and low total quantity sold
-Fries have a high quantity sold but low gross per item
-Salad has already been touched on
+4. This will be the query I use: [`01_profit_margin_analysis.sql`](sql/01_profit_margin_analysis.sql)   
+	a. I can see that the Salad and pizza menu items are outliers, losing more money than other menu items. Though it isn't necessarily bad, as long as those items sell a lot. 
+5. I’ll use this query to check total amounts of each item sold (I also included the average price per order but later saw the information was of no value): [`02_quantity_and_revenue.sql`](sql/02_quantity_and_revenue.sql)
+	a. I can see once again Salad is an outlier. It is one of the lowest selling items on the menu. I can also see Pizza is the best seller, meaning this is not the root cause for the loss of money.
+	b. I can see salad is an outlier, but why?
+I will this union-join query to see what ingredients cost most: [`03_salad_cost_breakdown.sql`](sql/03_salad_cost_breakdown.sql)
+	a. I can see now Parmesan is the highest cost ingredient by sixty-five cents. Due to the salad being one of the lowest ordered items, and the high cost of the parmesan i believe this menu item is the cause for the loss of money
+6. Recommendations: 
+	a. Regardless, start marketing the salad. Put up larger menu displays and posters to draw attention to the low sold menu/high cost menu item
+		i. Either, reduce amount of parmesan per salad by 1 oz, saving 62 cents per order
+		ii. Or, look into changing the vinaigrette for a new parmesan dressing. Getting rid of the need for parmesan on the salad entirely. Depending on the new cost of the new dressing, this would save around one 			dollar per salad. And can be labeled as a new menu item for an event.
+	b. Doing these steps could save 100-200$ per week. This is good but perhaps theres more im missing
+
+7. I’m going to go back to my original thought, the low cost menu items should be generating plenty of profit. I will use another union-join query to do many tasks here:
+	a. List the menu item
+	b. menu cost
+	c. cost to make and gross profit
+	d. Count total quantity sold
+	e. calculate its total profit contribution to search for discrepancies 
+8. Here is the query: [`04_profit_contribution.sql`](sql/04_profit_contribution.sql)
+	a. I can see from the chart theres a discrepancy from the low profit items. The low profit items are generating low total profit. 
+		i. The mains are selling extremely well, the sides and desserts are shaky
+		ii. Ice cream, fries and salad are losing the most
+			1. Ice cream has a high cost and low total quantity sold
+			2. Fries have a high quantity sold but low gross per item
+			3. Salad has already been touched on
 I’ll do one last SQL query to finalize and confirm my thoughts.
 It will calculate the combined profit and total orders of the top 4 sellers and bottom 4 sellers
 Averages the price per order
