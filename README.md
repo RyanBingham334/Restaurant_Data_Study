@@ -22,6 +22,9 @@ SQLite database containing:
 - High-cost items (e.g., Pizza) have significantly lower profit margins
 - Menu pricing does not align with ingredient cost complexity
 
+## Key Metrics
+![Metrics Dashboard](visualizations/metrics_dashboard.png)
+
 ## Tools Used
 - SQLite
 - DB Browser for SQLite
