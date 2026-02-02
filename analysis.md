@@ -66,7 +66,7 @@ I will use this union-join query to see what ingredients cost most:
 
 **Regardless, start marketing the salad. Put up larger menu displays and posters to draw attention to the low sold menu/high cost menu item**
 
-- **i.** Either, reduce amount of parmesan per salad by 1 oz, saving 62 cents per order
+- **i.** Either, reduce amount of parmesan per salad by 1 oz, saving 62 cents per order. Consider adding more of lower cost ingrediants such as tomateos or olives.
 
 - **ii.** Or, look into changing the vinaigrette for a new parmesan dressing. Getting rid of the need for parmesan on the salad entirely. Depending on the new cost of the new dressing, this would save around one dollar per salad. And can be labeled as a new menu item for an event.
 
@@ -136,7 +136,7 @@ I'll write one final querey to calculate a few tasks:
 ## Final Recommendations:
 
 ### Short-Term Win
-As a short win, change the salad recipe to include less parmesan. Perhaps adding more lower cost ingredients such as tomatoes or olives as a substitute
+As a short win, change the salad recipe to include less parmesan. Consider adding more lower cost ingredients such as tomatoes or olives as a substitute
 
 ### Long-Term Strategy
 Long term, rework the menu to include combo bundles. These bundles should include a high sold/high profit item, with a lesser sold/less profit margin item. And placing a 20% discount on the cheaper item will lead to more item sales and higher profits overall without changing the menu or switching around any labor.
