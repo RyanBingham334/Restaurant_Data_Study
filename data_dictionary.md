@@ -59,7 +59,6 @@ This database contains restaurant menu items, ingredient costs, bill of material
 | bulk_qty | INTEGER | Quantity in bulk purchase | 50, 10, 25 |
 | bulk_unit | TEXT | Unit of bulk purchase | oz, lb, each |
 | conversion_to_oz | INTEGER | Conversion factor to ounces | 1, 16, 1 |
-| field6 | TEXT | Additional field (not used in analysis) | - |
 
 **Primary Key**: `ingredient`
 
@@ -71,7 +70,6 @@ recipe_cost = SUM(qty * cost_per_oz) for all ingredients
 
 **Note**: 
 - `conversion_to_oz` standardizes all measurements to ounces for consistent calculations
-- Some ingredients may have inconsistent naming across tables (e.g., "parmesan" vs "parmesan cheese")
 
 ---
 
