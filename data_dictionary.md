@@ -122,22 +122,13 @@ This dual-reference system requires joining through the `menu_id` table as an in
 ## Recommended Schema Improvements
 
 1. **Standardize Primary Keys**
-   - Use integer auto-increment IDs OR use item names consistently
+   - Use integer auto-increment IDs 
    - Remove the alphanumeric encoding (#001, #002)
 
 2. **Fix Data Types**
    - Change `menu_items.price` from TEXT to INTEGER/REAL
-   - Change `menu_items.order_time` from TEXT to DATETIME
+   - Seperate data and time and change `menu_items.order_time` from TEXT to DATETIME
    - Ensure all numeric fields are properly typed
-
-3. **Add Foreign Key Constraints**
-   - Enforce `bill_of_materials.menu_id` → `menu_id.menu_id`
-   - Enforce `menu_items.food_item` → `menu_id.name`
-   - Enforce `bill_of_materials.ingredient` → `ingredient_cost.ingredient`
-
-4. **Normalize Ingredient Names**
-   - Standardize ingredient naming conventions across tables
-   - Consider a separate `ingredients` dimension table
 
 5. **Add Indexes**
    - Index foreign keys for join performance
