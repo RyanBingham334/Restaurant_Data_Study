@@ -16,7 +16,6 @@ The restaurant should be profitable—they've got cheap menu items and decent fo
 - **Python (Matplotlib)** - Built the metrics dashboard
 - **Excel** - Created comparison charts and tested scenarios
 - **DB Browser** - Query testing and validation
-- **Git** - Version control
 
 ## How I Approached It
 
