@@ -32,6 +32,8 @@ Second I will use a join query to calculate three things:
 
 **Finding:** [`01_profit_margin_analysis.csv`](results/01_profit_margin_analysis.csv)
 
+![Profit Margins by Item](visualizations/profit_margin_percent.png)
+
 - **a.** I can see that the Salad and pizza menu items are outliers, losing more money than other menu items. Though it isn't necessarily bad, as long as those items sell a lot.
 
 ---
