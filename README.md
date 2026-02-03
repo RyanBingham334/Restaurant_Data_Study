@@ -19,7 +19,7 @@ The restaurant should be profitable—they've got cheap menu items and decent fo
 
 ## How I Approached It
 
-I started by cleaning up the data (there were some encoding issues with the menu IDs—more on that in the [data dictionary](DATA_DICTIONARY.md)). Then I:
+I started by cleaning up the data (there were some encoding issues with the menu IDs—more on that in the [data dictionary](data_dictionary.md). Then I:
 
 1. Calculated the actual cost to make each dish using the bill of materials
 2. Figured out profit margins for every menu item
