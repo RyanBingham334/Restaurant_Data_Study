@@ -1,6 +1,6 @@
 ## Data Source & Acknowledgments
 
-This project began with the [Restaurant Orders dataset](https://www.kaggle.com/datasets/muhammadehsan000/restaurant-orders) by Muhammad Haseeb on Kaggle, which provided the initial transaction data structure (menu_items table).
+This project began with the [Restaurant Orders dataset](https://www.kaggle.com/datasets/haseebindata/restaurant-orders) by Muhammad Haseeb on Kaggle, which provided the initial transaction data structure (menu_items table).
 
 I significantly expanded the dataset by creating additional tables and adding over 150% more data:
 - **Created** `menu_id` table with standardized pricing
