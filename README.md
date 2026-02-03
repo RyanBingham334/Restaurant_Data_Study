@@ -44,7 +44,7 @@ Pizza comes in at 56% margin and Salad at 74%—way below everything else on the
 
 ![Top vs Bottom](visualizations/top_vs_bottom_4_items.png)
 
-The top 4 items generate $9,023 in profit. The bottom 4? Just $5,353. That's a **$3,670 gap** (60% difference) with roughly the same number of orders. The problem isn't foot traffic—it's what people are ordering and how much profit each item makes.
+The top 4 items generate $9,023 in profit. The bottom 4 generate just $5,353. That's a **$3,670 gap** (60% difference) with roughly the same number of orders. The problem isn't foot traffic—it's what people are ordering and how much profit each item makes.
 
 **See the query:** [`05_top_bottom_performer.sql`](sql/05_top_bottom_performer.sql)
 
@@ -52,16 +52,16 @@ The top 4 items generate $9,023 in profit. The bottom 4? Just $5,353. That's a *
 
 ![Total Profit](visualizations/total_profit_contribution_by_item.png)
 
-Mains (Pasta, Burger, Cake, Pizza) are carrying the whole operation. Sides and desserts are dead weight:
+Mains (Pasta, Burger, Pizza) are carrying the whole operation. Sides and desserts are dead weight:
 - Ice Cream costs too much to make and barely sells
 - Fries sell well but only make $7.75 profit per order
-- Salad has both problems—expensive to make AND nobody orders it
+- Salad has both problems, expensive to make AND nobody orders it
 
 **See the query:** [`04_profit_contribution.sql`](sql/04_profit_contribution.sql)
 
 ### Parmesan Is Destroying the Salad
 
-Parmesan costs $1.25 per salad—that's 65 cents more than any other ingredient. When you're selling one of the lowest-volume items on the menu and it costs that much to make, you've got a problem.
+Parmesan costs $1.25 per salad, that's 65 cents more than any other ingredient. When you're selling one of the lowest-volume items on the menu and it costs that much to make, there's a problem.
 
 **See the query:** [`03_salad_cost_breakdown.sql`](sql/03_salad_cost_breakdown.sql)
 
@@ -81,7 +81,7 @@ That's a 40% profit increase per transaction compared to just selling mains alon
 
 ## What They Should Do
 
-### Fix the Salad (Quick Win)
+### Fix the Salad (Short Term)
 
 Cut the parmesan by 1 oz or switch to a parmesan vinaigrette. That saves $0.62–$1.00 per salad, which adds up to **$100-200/week** with their current volume. Easy change, immediate impact.
 
@@ -131,7 +131,7 @@ Restaurant_Data_Study/
 
 ## Skills This Project Shows
 
-- Writing complex SQL (multi-table joins, CTEs, subqueries, aggregations)
+- Writing complex SQL (multi-table joins, CTEs, unions, subqueries, aggregations)
 - Root cause analysis—finding the real problem, not just symptoms
 - Translating technical findings into business recommendations
 - Data visualization that actually tells a story
