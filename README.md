@@ -141,7 +141,7 @@ Restaurant_Data_Study/
 ## Contact
 
 **Ryan Bingham**  
-[LinkedIn](#) | [GitHub](https://github.com/RyanBingham334) | ryanbingham3349@gmail.com
+[LinkedIn](#) | [GitHub](https://github.com/RyanBingham334) | ryanbingham334@gmail.com
 
 ---
 
