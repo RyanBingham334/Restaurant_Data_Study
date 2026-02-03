@@ -4,11 +4,11 @@
 
 ## What This Project Does
 
-I analyzed a struggling restaurant's menu data to figure out why they're losing money despite having low-cost items. Through SQL analysis of ingredient costs, recipes, and sales transactions, I found the root causes and built a strategy to increase profits by 40%.
+Here I analyze a struggling restaurant's menu data to figure out why they're losing money despite having low-cost items. Through SQL analysis of ingredient costs, recipes, and sales transactions, I found the root causes and built a strategy to increase profits by 40%.
 
 ## The Problem
 
-The restaurant should be profitable—they've got cheap menu items and decent foot traffic. But they're still in the red. Something wasn't adding up, so I dug into their data to find out what.
+The restaurant should be profitable—they've got cheap menu items and decent foot traffic. But they're still in the red. Something wasn't adding up, so I dug into the data to find out what.
 
 ## Tools I Used
 
