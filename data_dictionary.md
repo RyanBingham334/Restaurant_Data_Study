@@ -5,7 +5,7 @@ This database contains restaurant menu items, ingredient costs, bill of material
 
 ## Data Quality Notes
 
-⚠️ **Schema Issue Identified**: Menu items are encoded with IDs (#001, #002, etc.) rather than using human-readable names as primary keys. This creates unnecessary complexity when joining tables and makes queries harder to write and debug.
+**Schema Issue Identified**: Menu items are encoded with IDs (#001, #002, etc.) rather than using human-readable names as primary keys. This creates unnecessary complexity when joining tables and makes queries harder to write and debug.
 
 **Recommendation**: Use menu item names (pasta, burger, salad) as primary keys in `menu_id` table, or create a proper integer-based auto-incrementing primary key system. The current alphanumeric encoding (#001, #007) provides no benefit and reduces data accessibility.
 
@@ -18,7 +18,7 @@ This database contains restaurant menu items, ingredient costs, bill of material
 
 | Column Name | Data Type | Description | Example |
 |-------------|-----------|-------------|---------|
-| menu_id | TEXT | Unique identifier for each menu item (⚠️ non-standard encoding) | #001, #002, #007 |
+| menu_id | TEXT | Unique identifier for each menu item ( non-standard encoding) | #001, #002, #007 |
 | name | TEXT | Display name of the menu item | pasta, burger, salad |
 | menu_price | INTEGER | Standard menu price in dollars | 21, 17, 12 |
 
